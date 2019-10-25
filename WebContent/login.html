@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<title>问卷调研系统</title>
+</head>
+<body>
+<div class="content">
+<div class="center">
+<h2>调查</h2>
+<form style="display:inline" method="post" action="LoginServlet">
+       用户名：<input type="text" style="width:200px;height:30px" name="name"></br></br></br></br></br>
+        密码：<input type="password" style="width:200px;height:30px" name="pwd"></br></br></br></br>
+        用户角色：<select name="role">
+  <option value="user">调查用户</option>
+  <option value="admin">管理员</option>
+</select></br></br></br></br></br>
+<input type="submit" value="登录" style="margin-left:70px;display:inline"> 
+
+</form>
+<button class="but" style="margin-left:20px">立即注册</button>
+</div>
+</div>
+</body>
+<script>
+$(function(){
+  $(".but").click(function(){
+	  window.location.href="register.html";
+  });
+})
+</script>
+</html>

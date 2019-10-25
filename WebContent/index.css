@@ -1,0 +1,19 @@
+*{
+	margin:0;
+	padding:0;
+}
+.content{
+	width:2000px;
+	height:700px;
+	background:url("image/5.JPG") repeat ;
+	position:relative;
+}
+.center{
+	height:400px;
+	width:300px;
+	border:5px solid white;
+	position:absolute;
+	top:200px;
+	left:600px;
+	background-color:#ffff00;
+}

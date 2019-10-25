@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="jquery-3.3.1.min.js"></script>
+<link rel="stylesheet" href="index.css">
+<title>注册页面</title>
+</head>
+<body>
+<div class="content">
+<div class="center">
+<h2>注册</h2>
+       用户名：<input type="text" style="width:200px;height:30px" id="name"></br></br></br></br></br>
+        密码：<input type="password" style="width:200px;height:30px" id="pwd"></br></br>
+        <span id="msg"></span>
+        </br></br>
+<button  style="margin-left:70px" onclick="checkname()">注册</button>
+<button  style="margin-left:70px" onclick="reset()">重置</button>
+
+</div>
+</div>
+</body>
+<script>
+function reset(){
+	var xinxi=document.getElementsByTagName("input");
+	for(var i=0;i<3;i++){
+		xinxi[i].value="";
+	}
+}
+function checkname(){
+	var xml=new XMLHttpRequest();
+	var name=document.getElementById("name").value;
+	var pwd=document.getElementById("pwd").value;
+	xml.open("POST","registerServlet?name="+name+"&pwd="+pwd);
+	xml.send(null);
+	xml.onreadystatechange=function(){
+	 if(xml.readyState==4&&xml.status==200){
+		 if(xml.responseText=="true"){
+			 alert("注册成功,返回登录页面");
+			 window.location.href="login.html";
+		 }else{
+			 var msg=document.getElementById("msg");
+			 msg.innerHTML="已被注册"; 
+		 }
+	 }
+	}
+}
+</script>
+</html>

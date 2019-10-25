@@ -1,0 +1,113 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{
+	color:black;
+	text-decoration:none;
+}
+.content{
+	width:100%;
+	height:730px;
+	
+}
+.top{
+	width:100%;
+	height:80px;
+	background-color:#80ff00;
+	font-size:37px;
+	text-align:center;
+	letter-spacing:10px;
+	line-height:80px;
+}
+.line{
+	width:100%;
+	height:10px;
+	background-color:#c0c0c0;
+}
+.left{
+float:left;
+ width:200px;
+ height:100%;
+ background-color:#80ff00;
+}
+.right{
+	height:100%;
+	width:100%;
+	background:url("image/back.jpg");
+	
+}
+.ullist{
+	height:100%;
+	width:100%;
+}
+.ullist>li{
+	width:100%;
+	height:100px;
+	border-bottom:2px solid white;
+	text-align:center;
+	font-size:15px;
+}
+.task{
+	width:95%;
+	height:75px;
+	background-color:white;
+}
+.task ul{
+	        height:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+}
+.task ul li{
+	   margin: 0 auto;
+}
+.right .subject{
+	width:100%;
+	height:305px;
+	border:1px solid black;
+	display:none;
+}
+.right .question{
+	width:100%;
+	height:361px;
+	border:1px solid black;
+	display:none;
+
+}
+.right .taskManage{
+	width:100%;
+	height:100%;
+	border:1px solid black;
+	text-align:center;
+
+}
+.right .record{
+	width:100%;
+	height:100%;
+	border:1px solid black;
+	text-align:center;
+} 
+.Borleft2{
+		text-align:center;
+	 border:1px solid black; float:left; height:50px; width:277px;
+	
+}
+.Borright2{
+	 border:1px solid black; border-left:0 none; float:left; height:50px; width:1028px;
+}
+.Borleft{
+		text-align:center;
+	 border:1px solid black; float:left; height:50px; width:277px;
+}
+.Borright{
+	 border:1px solid black; border-left:0 none; float:left; height:50px; width:1028px;
+}
+.Borleft1{
+		text-align:center;
+	 border:1px solid black; float:left; height:150px; width:277px;
+	
+}
+.Borright1{
+	 border:1px solid black; border-left:0 none; float:left; height:150px; width:1028px;
+}
